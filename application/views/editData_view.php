@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Add new Data</title>
+	<title>Edit Data</title>
 	
 	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -13,9 +13,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-6 push-sm-3">
-				<h3 class="display-4 text-xs-center">Add new Slide</h3>
+				<h3 class="display-4 text-xs-center">Edit Slide</h3>
 				<hr>
-				<form action="Slides/addSlide" method="POST" enctype="multipart/form-data">
+				<form action="Slides/editSlide" method="POST" enctype="multipart/form-data">
 					<label for="title">Title</label>
 					<input type="text" id="title" name="title" placeholder="Title">
 
@@ -31,7 +31,7 @@
 					<label for="slide_image">Image Upload</label>
 					<input type="file" id="slide_image" name="slide_image">
 
-					<input type="submit" id="submit" id="submit" class="btn btn-primary">
+					<input type="submit" id="submit" id="submit" class="btn btn-primary" value="Edit">
 				</form>
 			</div>
 		</div>
